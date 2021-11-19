@@ -51,7 +51,8 @@ const MusicPage = () => {
     };
     console.log(value);
     try {
-      await PostMusic(value);
+      const res = await PostMusic(value);
+      console.log(res);
     } catch (error) {
       console.log(error);
     }
