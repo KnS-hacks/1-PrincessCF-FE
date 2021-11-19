@@ -57,17 +57,17 @@ const MusicPage = () => {
     }
   };
 
-  useEffect(() => {
-    const getMusicList = async () => {
-      try {
-        const { data } = await GetMusicList();
-        setMusicList(data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getMusicList();
-  }, [handleSubmit]);
+  // useEffect(() => {
+  //   const getMusicList = async () => {
+  //     try {
+  //       const { data } = await GetMusicList();
+  //       setMusicList(data);
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   getMusicList();
+  // }, [handleSubmit]);
 
   return (
     <MusicPageWrapper>
@@ -85,7 +85,7 @@ const MusicPage = () => {
         type="text"
       />
       <CompleteButton text="음악 신청 하기" onClick={handleSubmit} />
-      {renderMusicList(MusicList)}
+      {/* {renderMusicList(MusicList)} */}
     </MusicPageWrapper>
   );
 };
