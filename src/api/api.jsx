@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const SERVER_URL = 'http://54.180.183.215:8000';
+
 const Api = ({ url, type = 'GET', params, contentType = 'application/json' }) => {
   const headers = {
     'Content-Type': contentType,
@@ -12,7 +14,7 @@ const Api = ({ url, type = 'GET', params, contentType = 'application/json' }) =>
 
   return axios({
     method: type,
-    url: `${url}`,
+    url: `${SERVER_URL}${url}`,
     headers,
     data: params,
   });
