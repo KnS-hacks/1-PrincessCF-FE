@@ -2,7 +2,7 @@
   "name": "init",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://54.180.183.215/:8000",
+  "proxy": "http://54.180.183.215:8000",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@steveeeie/react-page-transition": "^1.2.1",
